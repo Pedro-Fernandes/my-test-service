@@ -21,5 +21,5 @@ TEST_SERVICE_SECRET_ID
 Run the application with:
 mvn spring-boot:run
 
-#Reproducing the issue
+# Reproducing the issue
 Remove lines 13 and 14 of bootstrap.yml and execute the application to reproduce the issue
