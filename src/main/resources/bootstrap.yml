@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    vault:
+      authentication: approle
+      app-role:
+        role-id: ${TEST_SERVICE_APPROLE}
+        secret-id: ${TEST_SERVICE_SECRET_ID}
+      kv:
+        enable: true
+        backend: secret
+        application-name: my-test-service
+        default-contest: my-test-service
+      generic:
+        enabled: false
+      host: localhost
+      port: 8200
+      scheme: http
+      fail-fast: true
